@@ -1,0 +1,11 @@
+.search-input {
+    width: 0;
+    padding: 0;
+    transition: all 0.4s linear;  
+}
+
+.search-input--visible {
+    width: calc(100% - 10px);
+    padding: 0 calc(30px + 20px);
+    transition: all 0.4s linear; 
+}

@@ -2,6 +2,7 @@ import { ComponentType, StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { RecoilRoot } from 'recoil';
+import { Root } from '@/components/styled';
 
 // import ThemeProvider from '@/theme/Provider';
 
@@ -13,9 +14,9 @@ function render(App: ComponentType) {
     <StrictMode>
       <RecoilRoot>
         <HelmetProvider>
-          {/* <ThemeProvider> */}
-          <App />
-          {/* </ThemeProvider> */}
+          <Root>
+            <App />
+          </Root>
         </HelmetProvider>
       </RecoilRoot>
     </StrictMode>,

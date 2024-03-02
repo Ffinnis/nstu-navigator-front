@@ -10,7 +10,7 @@ import Pages from '@/routes/Pages';
 // import HotKeys from '@/sections/HotKeys';
 // import Notifications from '@/sections/Notifications';
 // import SW from '@/sections/SW';
-// import Sidebar from '@/sections/Sidebar';
+import MobileNav from '@/sections/MobileNav';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <CssBaseline />
       <BrowserRouter>
         <Pages />
+        <MobileNav />
       </BrowserRouter>
     </Fragment>
   );

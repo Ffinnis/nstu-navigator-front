@@ -8,6 +8,16 @@ const routes: Routes = {
     path: '/',
     title: 'Main',
   },
+  [Pages.Map]: {
+    component: asyncComponentLoader(() => import('@/pages/Map')),
+    path: '/map',
+    title: 'Map',
+  },
+  [Pages.User]: {
+    component: asyncComponentLoader(() => import('@/pages/User')),
+    path: '/user',
+    title: 'User',
+  },
 };
 
 export default routes;
