@@ -4,7 +4,7 @@ const VideoCardsContainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  gap: '16px',
+  gap: '24px',
 });
 
 export { VideoCardsContainer };

@@ -5,14 +5,15 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 function VideoCard(props: VideoData) {
-  const { url, title, description } = props;
+  const { url, title } = props;
 
   return (
     <Card>
       <CardContent>
-        <ReactPlayer width="100%" height="170px" url={url} />
-        <Typography variant="h5">{title}</Typography>
-        <Typography variant="body2">{description}</Typography>
+        <ReactPlayer width="100%" height="200px" url={url} />
+        <Typography marginTop={3} variant="h5">
+          {title}
+        </Typography>
       </CardContent>
     </Card>
   );
